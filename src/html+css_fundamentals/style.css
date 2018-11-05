@@ -63,39 +63,7 @@ td {
     border: 1px solid black;
 }
 
-#one,#two,#three {
-    width: 250px;
-    height: 150px;
-}
 
-#one {
-    background: red;
-    position: relative;
-    
-}
-
-#two {
-    background: blue;
-}
-
-#three {
-    background: green;
-}
-
-#two, #three {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-}
-
-#shadow {
-    background: red;
-    height: 150px;
-    width: 250px;
-    box-shadow: 5px 5px 0 0 blue,
-        10px 10px 0 0 green;
-    
-}
 
 td, td label{
     position: relative;
