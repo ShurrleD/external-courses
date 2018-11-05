@@ -1,0 +1,128 @@
+@font-face{
+    font-family: txt;
+    src: url(font.ttf);
+}
+
+
+#main {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+    width: 250px;
+    height: 100px;
+    border-style: solid;
+    border-width: thick;
+    background: linear-gradient(to bottom, #e6f3e9, #acdabb);
+    border-radius: 40px;
+}
+
+#main:before{
+    border: solid;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    pointer-events: none;
+    border-radius: 30px;
+}
+
+#image1, #image2 {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+#image1 {
+    position: absolute;
+    top: 26px;
+    left: 25px;
+}
+
+#image2 {
+    position: absolute;
+    top: 26px;
+    right: 25px;
+}
+
+#text {
+    position: absolute;
+    top: 29px;
+    left: 81px;    
+    font-size: 35px;
+    font-family: txt;
+}
+
+.star {
+    height: 25px;
+    width: 25px;
+}
+
+td {
+    border: 1px solid black;
+}
+
+#one,#two,#three {
+    width: 250px;
+    height: 150px;
+}
+
+#one {
+    background: red;
+    position: relative;
+    
+}
+
+#two {
+    background: blue;
+}
+
+#three {
+    background: green;
+}
+
+#two, #three {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+#shadow {
+    background: red;
+    height: 150px;
+    width: 250px;
+    box-shadow: 5px 5px 0 0 blue,
+        10px 10px 0 0 green;
+    
+}
+
+td, td label{
+    position: relative;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+input {
+  position: absolute;
+  top: -1000px;
+  left: 0;
+}
+
+input:checked::before{
+    position: absolute;
+    content:'♘';
+    text-align: center;
+    font-size: 40px;
+    color: crimson;
+    top: 996px;
+}
+
+td label{
+    display: block;
+}
+
+table {
+  border-collapse: collapse;
+}
